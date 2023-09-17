@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alvadev</title>
+    <link rel="shortcut icon" href="/HTML Desde 0/Proyecto-Final/assets/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="/HTML Desde 0/Proyecto-Final/styles/contacto.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Alvadev</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="preferencias.html">Preferncia</a></li>
+                <li><a href="audiovisuales.html">Audiovisuales</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="contenedor-formulario">
+        <form action="">
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" placeholder="Escribe aquí tu nombre" minlength="3" required>
+            <label for="apellido">Apellido:</label>
+            <input type="text" name="apellido" placeholder="Escribe aquí tu apellido"  minlength="3" required>
+            <label for="mail">Email: </label>
+            <input type="email" name="mail" id="mail" placeholder="Escribe aquí tu mail" required>
+            <label for="pais">País: </label>
+            <select name="pais" id="pais">
+                <option value="Argentina">México</option>
+                <option value="chile">chile</option>
+                <option value="Bolivia">Bolivia</option>
+                <option value="Perú">Perú</option>
+                <option value="Uruguay">Uruguay</option>
+                <option value="España">España</option>
+                <option value="Colombia">Colombia</option>
+                <option value="Venezuela">Venezuela</option>
+                <option value="Ecuador">Ecuador</option>
+                <option value="México">Argentina</option>
+            </select>
+            <label for="comentario">Comentario: </label>
+            <textarea name="comentario" id="comentario" placeholder="Escribe tu comentario"></textarea>
+            <label for="motivo">Motivo: </label>
+            <input type="radio" name="motivo" id="motivo"><i>Saludarme</i>
+            <input type="radio" name="motivo" id="motivo"><i>Consejo</i>
+            <input type="radio" name="motivo" id="motivo"><i>Desarrollar una página web</i>
+            <input type="radio" name="motivo" id="motivo"><i>Propuesta de trabajo</i>
+            <input type="submit" value="Envíar">
+        </form>
+    </div>
+
+    <footer class="footer">
+        <p>Derechos reservados &copy; 2023</p>
+    </footer>
+</body>
+</html>
