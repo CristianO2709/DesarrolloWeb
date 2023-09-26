@@ -1,0 +1,957 @@
+/*Sintaxis*/
+/*selector{
+    atributo: valor; = declaracion
+}*/
+
+/* 01.- SELECTORES */
+/* Selectores De Elementos
+se les aplica el cambio a los selectores de elemento
+h1{
+    color: red;
+    background-color: green;
+}
+h2{
+    color: yellow;
+    background-color: blue;
+}*/
+/*a cada uno de los selectores de elemento se les aplica el cambio
+h1, h2 {
+    color: red;
+    background-color: green;
+}*/
+/*a todos los selectores de elemento se les aplica el cambio
+body {
+    color: red;
+    background-color: green;
+}*/
+/*a cada una de las etiquetas se les aplica el cambio
+* {
+    color: red;
+    background-color: green;
+}*/
+/* Selectores De Identificadores - id
+se le aplica el cambio al selector que contenga el id en especifico
+#titulo {
+    color: red;
+    background-color: green;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#parrafo {
+    text-align: end;
+}*/
+/* Selectores De Clases - class 
+se le aplica el cambio a los selectores que contenga la class en especifico
+.seccion1 {
+    background-color: red;
+    color: black;
+}
+.seccion2 {
+    background-color: black;
+    color: red;
+}
+.estilo-fuente-distinto{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}*/
+/*se aplicara el cambio al selector de elemento que contenga la class en especifico
+h2.seccion3{
+    color: yellow;
+}
+p.seccion1{
+    background-color: green;
+}
+/*se aplicara el cambio al selector de elemento que contenga el id en especifico
+p#parrafoSeleccionado{
+    color: blue;
+}
+se le aplicara el cambio a la etiqueta que contenga las class en especifico
+.seccion1.estilo-fuente-distinto{
+    text-align: end;
+}*/
+
+/* 02.- Comentario */
+
+/* 03.-Colores */
+/*h1{
+    background-color: coral; 
+    background-color: #09cc13;
+    background-color: rgb(160, 109, 109);
+    background-color: hsla(59, 100%, 50%, 0.61);
+}*/
+
+/* 04.- Background - Fondo */
+/*body{
+    background-color: violet ; 
+    background: linear-gradient(90deg, #fff 0%, red 20%, green 60%, blue 100%);
+    background-image: url(../assets/images/fondo.jpeg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-attachment: fixed;
+    background: black url(../assets/images/fondo.jpeg)no-repeat bottom;
+}
+
+p{
+    color: white;
+}*/
+
+/* 05.- Bordes*/
+/*p{
+    border: 3px solid green;
+    border-radius: 10px;
+}
+p.dotted{
+    border-style: dotted;
+    border-color: blue;
+    border-width: 5px
+}
+p.dashed{
+    border-style: dashed;
+    border-color: red;
+    border-width: 5px
+}
+p.solid{
+    border-style: solid;
+    border-color: black;
+    border-width: 5px
+}
+p.double{
+    border-style: double;
+    border-color: green;
+    border-width: 5px
+}
+p.groove{
+    border-style: groove;
+    border-color: yellow;
+    border-width: 5px
+}
+p.ridge{
+    border-style: ridge;
+    border-color: purple;
+    border-width: 5px
+}
+p.inset{
+    border-style: inset;
+    border-color: brown;
+    border-width: 5px
+}
+p.outset{
+    border-style: outset;
+    border-color: gray;
+    border-width: 5px
+}
+p.none{
+    border-style: none;
+    border-color: chartreuse;
+    border-width: 5px
+}
+p.hide{
+    border-style: hide;
+    border-color: darkblue;
+    border-width: 5px
+}
+p.mix{
+    border-style: dotted dashed solid inset;
+    border-color: coral;
+    border-width: 5px
+}*/
+
+/* 06.- Unidades De Medida */
+/* % - relativo al elemento padre
+EM - relativo al font-size del elemento
+REM - relativo al font-size del elemento raíz
+VW - relativo al  1% del ancho del viewport
+VH - relativo al  1% del alto del viewport 
+PX - medida absoluta en pixiles
+VMAX - relativo al 1% del lado mas grande del viewport
+VMIN - relativo al 1% del lado más pequeño del viewport
+EX - medida de altura de tamaño de fuente de letra*/
+
+/* 07.- Margin - Margenes */
+/* es el espacio del borde hacia la parte externa del elemento 
+div.cajita1{
+    height: 300px;
+    width: 300px;
+    border: 5px solid black;
+    background-color: green;
+}
+div.cajita2{
+    height: 300px;
+    width: 300px;
+    border: 5px solid black;
+    background-color: white;
+    margin: 15px 30px 50px 100px;
+
+}
+div.cajita3{
+    height: 300px;
+    width: 300px;
+    border: 5px solid black;
+    background-color: red;
+}*/
+
+/* 08.- Padding */
+/* es el espacio entre el borde y el elemento interno
+div.cajita1{
+    border: 5px solid black;
+    background-color: green;
+    padding: 30px;
+}*/
+
+/* 09.- Height Y Width - Alto y Ancho */
+/* min-height y max-height - se adapta al elemento siempre y cuando no sobrepase de las unidades de medida asignada
+div.cajita1{
+    border: 2px solid black;
+    background-color: green;
+    color: white;
+    max-height: 100px;
+    width: 100px;
+}
+div.cajita2{
+    border: 2px solid black;
+    background-color: white;
+    color: black;
+    min-height: 100px;
+    width: 100px;
+}
+div.cajita3{
+    border: 2px solid black;
+    background-color: red;
+    color: black;
+    max-height: 100px;
+    width: 100px;
+}
+div.cajita-azul{
+    border: 2px solid black;
+    background-color: blue;
+    color: white;
+    height: 500px;
+    width: 500px;
+}
+div.cajita-roja{
+    border: 2px solid black;
+    background-color: red;
+    color: black;
+    min-height: 100px;
+    width: 100px;
+}*/
+
+/* 10.- Texto */
+/* h1 {
+    color:blue;
+    text-align: center;
+}
+h2 {
+    color:green;
+    text-align: center;
+
+}
+p { 
+    color: darkred;
+    text-align: justify;
+}
+
+b, i {
+    color: black;
+} 
+h1.overline{
+    text-decoration: overline blue  double 2px;
+}
+h1.line-through{
+    text-decoration: line-through green  solid 2px;
+}
+h1.underline{
+    text-decoration: underline red wavy 2px;
+}
+p.transformado{
+    text-transform: capitalize;
+}
+p.transformado{
+    text-indent: 150px; 
+    letter-spacing: 10px;
+    line-height: 3;
+    word-spacing: -10px;
+    white-space: nowrap;
+}
+h1.text-shadow{
+    text-shadow: 1px 1px 25px greenyellow;
+    text-shadow: 1px 1px 50px greenyellow, 1px 5px 15px red, 0px 0px 10px blue;
+}*/
+
+/* 11.- Fuentes */
+/* h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+P{
+    font-style: italic;
+    font-weight: 900;
+    font-variant: small-caps; 
+    font-size: 1.5em;
+}
+h1, h1, p {
+    font-family: 'Inconsolata', monospace;
+}*/
+
+/* 12.- Íconos */
+
+/* 13.- Listas */
+/*ul{
+    list-style-type: lower-roman; 
+    list-style-image: url(../assets/images/icon.png); 
+    background-color: black;
+    padding: 20px;
+}
+li{
+    color: white;
+    background-color: gray;
+    padding: 5px;
+    margin-left: 10px;
+}*/
+
+/* 14.- Table */
+/*table, tr, th, td{
+    border: 1px solid black;
+}
+
+tr, td{
+    border: 1px solid black;
+    width: 200px;
+    text-align: center;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+table, th{
+    border: 2px solid black;
+}
+
+.primeraColumna{
+    border: 2px solid black;
+} 
+
+th{
+    height: 50px;
+    background-color: gray;
+}
+
+tr:nth-child(even){par
+    background-color: aqua;
+}
+
+tr:nth-child(odd){impar
+    background-color: aquamarine;
+}
+
+tr:hover{
+    background-color: red;
+}*/
+
+/* 15.- Display & Visivility */
+/* display: none; - Se oculta el elemento y no ocupa el lugar
+visibility: hidden; - Se oculta el elemento pero ocupa el lugar
+
+.cajita1{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border: 3px solid black;
+    display: inline;
+}
+.cajita2{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    border: 3px solid black;
+    display: inline;
+
+}
+.cajita3{
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    border: 3px solid black;
+    display: inline;
+
+}
+
+.box1{
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    border: 3px solid black;
+    display: block;
+}
+.box2{
+    width: 100px;
+    height: 100px;
+    background-color: violet;
+    border: 3px solid black;
+    display: block;
+    visibility: hidden;
+
+}
+.box3{
+    width: 100px;
+    height: 100px;
+    background-color: deeppink;
+    border: 3px solid black;
+    display: block;
+
+}*/
+
+/* 16.- Position - Posicion */
+/* static: el elemento se queda estatico en su lugar y ocupa todo el espacio
+.container{
+    position: static;
+    border: 2px solid green;
+}*/
+/* relative: el elemento se posiciona a lo contrario de lo que se pone en el - atributo: valor y ocupa todo el espacio;
+.container{
+    position: relative;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+.parrafo{
+    position: relative;
+    top: 50px;
+} */
+/* absolute: el elemento se posiciona dependiendo del atributo: valor; asignado y no ocupa todo el espacio y se queda se queda en su lugar 
+.texto{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+.container{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border: 2px solid green;
+}*/
+/* fixed: el elemento se super pone dependiendo donde se agg y no ocupa todo el espacio y se queda en su lugar pero al scrollear se sigue mostrando
+.container{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    border: 2px solid green;
+}*/
+/*sticky: el elemento se super pone y se posiciona dependiendo donde se agg y del atributo: valor; y al scrollear se sigue mostrando
+.container{
+    position: sticky;
+    top: 0;
+    border: 2px solid green;
+}
+*/
+
+/* 17.- Z-Index */
+/* img{
+    width: 150px;
+    height: 150px;
+}
+h1{
+    position: absolute;
+    top: 50px;
+    font-size: 25px;
+    color: white;
+    z-index: 0;
+}
+.adelante{
+    z-index: 1;
+    position: relative;
+} */
+
+/* 18.- Overflow */
+/* overflox el elemento hijo se puede ocultar del elemento padre cuando sobrepase o agregar un scroll
+.container{
+    width: 300px;
+    height: 300px;
+    background-color: red;
+    overflow: hidden;
+} 
+.container{
+    width: 300px;
+    height: 300px;
+    background-color: red;
+    overflow: scroll;
+    overflow-x: hidden;
+}*/
+
+/* 19.- Float */
+/* .container{
+    border: 2px solid red;
+}
+img{
+    float: left;
+    padding-right: 10px;
+} */
+
+/* 20.-Selectores Combinados */
+/* Selector descendiente: se les aplica el cambia a los elementos que estan dentro
+div p {
+    background-color: yellow;
+}*/
+/* Selector hijo: se les aplica el cambia a los elementos hijos que estan dentro del elemento padre
+span>p {
+    background-color: yellow;
+}*/
+/* Selector hermano adyacente: se le aplica el cambio a todo el 1er hermano del elemento
+div+p{
+    background-color: yellow;
+}*/
+/* Selector hermano Gral: se le aplica el cambio a todos los hermanos en gral del elemento
+div~p{
+    background-color: yellow;
+}*/
+
+/* 21.- PseudoClases */
+/* elemento:seudoelemento{
+    propiedad:valor;
+}*/
+/* asignarle estilo al link
+a:link{
+    color:black;
+    text-decoration: none;
+    background-color: yellowgreen;
+} */
+/* asignarle estilo cuando sobre pasen el elemento
+a:hover{
+    color: red;
+    background-color: beige;
+} */
+/* se asigna el estilo cuando se da clic al elemento 
+a:active{
+    background-color: blue;
+} */
+/* se le asigna el estilo cuando le das clic al elemento y es visitado
+a:visited{
+    background-color: blueviolet;
+} */
+/* se muestra el elemento cuando sobre pasan en otro elemento 
+p{
+    display: none;
+    background-color: yellow;
+    padding: 20px;
+}
+div:hover p{
+    display: block;
+} */
+/* se le aplica el estilo al primer hijo
+p:first-child{
+    background-color: blue;
+} */
+/* se le aplica el estilo al ultimo hijo
+p:last-child{
+    background-color: blue;
+} */
+/* se le aplica el estilo a los hijos pares 
+p:nth-child(even){
+    background-color: red;
+}*/
+/* se le aplica el estilo a los hijos impares
+p:nth-child(odd){
+    background-color: red;
+} */
+/* se aplica el cambio cuando se da clic al elemento
+input:focus{
+    background-color: red;
+} */
+
+/* 22.- PseudoElementos */
+/*selector::pseudoelemento{
+    propiedad:valor;
+}*/
+/* p::first-line{
+    color: red;
+}*/
+/* p::first-letter{
+    font-size: 3em;
+    color: red;
+} */
+/* p.primerParrafo::first-letter{
+    font-size: 3em;
+    color: red;
+} */
+/* h1::after{
+    content: url(../assets/images/icon.png);
+}
+p.primerParrafo::first-letter{
+    font-size: 3em;
+    color: red;
+}  */
+/* ::marker{
+    color: red;
+    font-size: 2em;
+} 
+::selection{
+    background-color: red;
+    color: green;
+}*/
+
+/* 23.- Opacidad */
+/* body{
+    background-color: black;
+}
+h1{
+    color: red;
+}
+p{
+    color: white;
+}
+img{
+    position: absolute;
+    top:0;
+}
+img:hover{
+    opacity: 0.5;
+} */
+
+/* 24.- NavBar - Navegación */
+/* ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(56, 56, 56);
+}
+
+li{
+    float: left;
+    border-right: 1px solid rgb(115, 178, 186);
+}
+li:last-child{
+    border-right: none;
+    border-left: 1px solid rgb(115, 178, 186);
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 15px;
+    text-decoration: none;
+}
+.active{
+    background-color: orange;
+}
+
+li a:hover:not(.active){
+    background-color: coral;
+} */
+
+/* 25.- Selectores de atributo */
+/* a[target="_blank"]{
+    background-color: aqua;
+} */
+
+/* 26.- Important */
+/* h1{
+    background-color: blue;
+    color: white;
+}
+h2{
+    background-color: greenyellow;
+    color: white;
+}
+p{
+    background-color: brown !important;
+    color: white;
+} */
+
+/* 27.- Animaciones */
+/* body{
+    background-color: black;
+    color: white;
+}
+img{
+    position: absolute;
+    width: 500px;
+    top: 0;
+}
+
+@keyframes imagen{
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0.5;
+    }
+}
+
+img:hover{
+    animation-name: imagen;
+    animation-duration: 2s;
+}
+@keyframes cuadrado{
+    0%{
+        background-color: red;
+        left: 0;
+        top: 0;
+    }
+    25%{
+        background-color: blue;
+        left: 200px;
+        top: 0;
+    }
+    50%{
+        background-color: green;
+        left: 200px;
+        top: 200px;
+    }
+    75%{
+        background-color: yellow;
+        left: 0;
+        top: 200px;
+    }
+    100%{
+        background-color: red;
+        left: 0;
+        top: 0;
+    }
+}
+
+.cuadradito{
+    border: 2px solid black;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    animation-name: cuadrado;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+}
+
+@keyframes cuadrado{
+    from{
+        background-color: red;
+        left: 0;
+    }
+    to{
+        background-color: blue;
+        left: 200px;
+    }
+}
+
+.cuadradito{
+    border: 2px solid black;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    animation: cuadrado 2s linear 1s infinite alternate;
+}
+
+.cuadradito2{
+    border: 2px solid black;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    animation: cuadrado 2s ease 1s infinite alternate;
+}
+
+.cuadradito3{
+    border: 2px solid black;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    animation: cuadrado 2s ease-in 1s infinite alternate;
+}
+
+.cuadradito4{
+    border: 2px solid black;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    animation: cuadrado 2s ease-in-out 1s infinite alternate;
+}
+
+.cuadradito5{
+    border: 2px solid black;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    animation: cuadrado 2s ease-out 1s infinite alternate;
+}*/
+
+/* 28.- Transiciones */
+/*body{
+    background-color: black;
+    color: white;
+}
+img{
+    position: absolute;
+    top: 0;
+    opacity: 1;
+    width: 500px;
+    transition: opacity 2s ease-in-out 0.3s, width 5s linear;
+}
+
+img:hover{
+    opacity: 0.5;
+    width: 700px;
+    transition: opacity 2s ease-in-out 0.3s, width 5s linear;
+    transition-property: opacity;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0.3s;
+}*/
+
+/* 29.- MediaQueries */
+/* .contenedor{
+    overflow: auto;
+}
+.leftside{
+    float: none;
+    width: auto;
+}
+.texto{
+    position: absolute;
+    top: 0;
+    color: red;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+@media (min-width:545px){
+
+    .leftside{
+        float: left;
+        width: 300px;
+    }
+    img{
+        width: 300px;
+    }
+    .texto{
+        position: static;
+    }
+}
+@media (min-width:500px) and (min-width:900px){
+    body{
+        background-color: black;
+    }
+} */
+
+/* 30.- FlexBox */
+/* .flex-container{
+    display: flex;
+    background-color: rgb(35, 212, 153);
+    flex-direction: row; 
+    flex-direction: row-reverse;
+    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    flex-wrap: wrap;
+    justify-content: flex-start; 
+    justify-content: flex-end;
+    justify-content: center;
+    justify-content: space-between;
+    justify-content: space-around;
+    justify-content: space-around;
+    justify-content: space-evenly;
+    align-items: flex-start; 
+    align-items: flex-end;
+    align-items: center;
+    align-content: center;
+    height: 500px;
+    color: white;
+}
+
+.flex-container > div{
+    background-color: rgb(10, 60, 11);
+    margin: 10px;
+    padding: 10px;
+    font-size: 1.5em;
+}
+
+.flex-container > div:not(.distinta){
+    background-color: rgb(10, 60, 11);
+    margin: 10px;
+    padding: 10px;
+    font-size: 1.5em;
+    width: 50px;
+    height: 50px;
+}
+.distinta{
+    width: 75px;
+    height: 75px;
+} */
+
+/* 31.- Grid */
+
+.grid-container{
+    display: grid;
+    background-color: rgb(35, 212, 153);
+    color: white;
+    /* grid-template-columns: 150px 150px 150px;
+    grid-template-rows: 150px 150px 150px; 
+    grid-template-columns: 150px auto 150px;
+    grid-template-rows: 150px 150px auto;
+    grid-template-columns: 33% auto 33%;
+    grid-template-rows: 33% 33% auto;*/
+    grid-template-columns: 200px 120px 200px;
+    grid-template-rows: 100px 120px 100px;
+    /* justify-items: start; 
+    justify-items: end;
+    justify-items: center;*/
+    /* justify-content: start; 
+    justify-content: end;
+    justify-content: center;
+    justify-content: space-around;
+    justify-content: space-between;
+    justify-content: space-evenly;*/
+    height: 500px;
+    /* align-content: start; 
+    align-content: end;
+    align-content: center;
+    align-content: space-around;
+    align-content: space-between;
+    align-content: space-evenly;*/
+    /* align-items: start;
+    align-items: center;
+    align-items: end; */
+    /* grid-auto-flow: row;
+    grid-auto-flow: column; */
+}
+
+.grid-container > div{
+    background-color: rgb(10, 60, 11);
+    margin: 10px;
+    padding: 10px;
+    font-size: 1.5em;
+}
+
+.grid-container > div:not(.distinta){
+    background-color: rgb(10, 60, 11);
+    margin: 10px;
+    padding: 10px;
+    font-size: 1.5em;
+    /* width: 50px;
+    height: 50px; */
+}
+/* .distinta{
+    width: 75px;
+    height: 75px;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
